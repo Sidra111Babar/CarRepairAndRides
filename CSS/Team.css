@@ -1,0 +1,135 @@
+*{
+    transition: .5s;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.teamCustomCard{
+    width: 18rem; 
+    background-color: rgba(239, 239, 234, 0.858); 
+    border-bottom: 3px solid black;
+}
+
+.teamCustomCardContent{
+    width: 200px; 
+    padding: 5px; 
+    border-radius: 5xp; 
+    background-color:rgb(243, 240, 240);
+}
+.teamImgWrapper{
+    overflow: hidden;
+    height: 230px;
+    width: 230px;
+}
+.teamCustomImgStyle{
+    width: 100%;
+    height: 100%;
+}
+.TeamPageContainer{
+    padding: 30px 0;
+}
+
+/* Image hover effect */
+.teamcol:hover .teamCustomImgStyle {
+    transform: scale(1.1);
+    transition: transform 0.3s ease; 
+}
+.teamcol:hover .teamIconsContainer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.teamIconsContainer {
+    background-color: rgba(28, 23, 23, 0.9); 
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    top: 13%;
+    left: 53%;
+    opacity: 0;
+    transform: translateY(20px); 
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    border-radius: 8px; 
+    
+}
+
+.teamcol {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; 
+}
+
+.teamIcon {
+    padding: 5px;
+   
+}
+
+.teamIcon:hover {
+    transform: scale(1.2); 
+    color: #de1b1b; 
+}
+
+ /* Overrriding or any other issue */
+/*  @media screen and (min-width: 1400px) {
+    .teamIconsContainer {
+        background-color: red; 
+    }
+}*/
+/* Use for media query for Hover Content  */
+@media screen and (max-width: 325px) {
+    .teamIconsContainer {
+        left: 75%;
+    }
+} 
+@media screen and ((min-width: 325px) and (max-width: 400px)) {
+    .teamIconsContainer {
+        left: 72%;
+    }
+} 
+@media screen and ((min-width: 401px) and (max-width: 446px)) {
+    .teamIconsContainer {
+        left: 70%;
+    }
+} 
+@media screen and ((min-width: 447px) and (max-width: 525px)) {
+    .teamIconsContainer {
+        left: 67%;
+    }
+} 
+@media screen and ((min-width: 526px) and (max-width: 991px)) {
+    .teamIconsContainer {
+        left: 65%;
+    }
+} 
+@media screen and ((min-width: 992px) and (max-width: 1200px)) {
+    .teamIconsContainer {
+        left: 75%;
+    }
+} 
+@media screen and ((min-width: 1201px) and (max-width: 1400px)) {
+    .teamIconsContainer {
+        left: 63%;
+    }
+} 
+
+@media screen and (max-width: 572px) {
+    .customTeamRow {
+        padding: 0 15px;
+    } 
+   
+}
+
+@media screen and (max-width: 768px) {
+    .teamcol {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    
+  
+}
+
+

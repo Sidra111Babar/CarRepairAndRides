@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.advantagesCardIcon{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 38% 100%, 0 100%, 0% 50%);
+        padding: 2.5rem;
+        background-color: #EE1C25;
+}
+.advPara{
+    padding: 0;
+    margin: 0;
+}
+.advCardCol{
+    padding: 0;
+    margin:0;
+}
+.AdvImgWrapper img{
+    width: 700px;
+    height: 400px;
+}
+
+.advCardsCon{
+    transform:translateY(-60px);
+}
+.advAnimatedIcon{
+    font-size: 7rem;
+    opacity: 0.3;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.AdvantagesOverallCon{
+    position: relative;
+}
+
+.AdvantagesOverallCon{
+    z-index: 101;
+    padding-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+    
+    .advCardsCon{
+        transform:translateY(-20px);
+    }
+    .advAnimatedIcon{
+        top: 50%;
+    }
+
+}
+@media screen and (max-width: 766px) {
+    .AdvImgWrapper{
+        display: none;
+    }
+
+}
+
+    .advCardsCon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+    .advCard{
+        width: 18rem;
+    }
+@media screen and  (max-width: 990px) {
+       .advCardsCon{
+          flex-direction: column;
+          row-gap: 2rem;
+
+       }
+}
+@media screen and ((min-width: 578px) and (max-width: 991px)) {
+    .advCard{
+        width: 30rem;
+    }
+    .advantagesCardIcon{
+        margin-left: -10rem;
+    }
+    
+}
+@media screen and ((min-width: 460px) and (max-width: 577px)) {
+    .advCard{
+        width: 24rem;
+    }
+    .advantagesCardIcon{
+        margin-left: -5rem;
+    }
+}
+@media screen and  (max-width: 340px) {
+    .advCardsCon{
+        transform:translateY(0px);
+    }
+}
+

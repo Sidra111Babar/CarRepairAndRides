@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    
+  }
+  .cf2
+   {
+    padding: 0 !important;     /* -------Solve the issue of spacing between two navbars */
+  }
+  
+  .icons .text{
+    color:  white;
+    transition: all 0.2s ease;
+  }
+  .mail{
+    color: white;
+  }
+  .icons .text:hover,.mail:hover{
+      color: #EE1C25;
+      
+  }
+    
+    .customNavbar{
+          background-image:url("../Assets/1_navCarimg.webp"); 
+          background-repeat: no-repeat;
+          background-size: 100%;
+          object-fit: cover;  
+    }
+    .navheading{
+        padding: 5px;
+        background-color: #EE1C25;
+       padding-bottom: 10px;
+    }
+    .navSupport{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         padding-left: 8rem;
+    }
+    /* Position sticky is not working and position fixed is removing upper navbar and make backround transparent */
+   /*  .carLowerNavbar {
+         position: sticky;
+         z-index: 150;
+    } */
+    @media screen and (max-width: 694px) {
+           .customNavbar{
+            display: none;
+           }
+    }
+    @media screen and (max-width: 991px) {
+        .navSupport{
+            display: none;             
+        }
+        .custom_navbarul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .navheading{
+            background-color: rgb(243, 240, 240);
+            color: black;
+        }
+    }
+
+    /* Rotate the builtin arrows of bootstrap */
+    .dropdown-toggle::after {
+        transition: transform 0.3s ease;
+    }
+    
+    .dropdown-toggle[aria-expanded="true"]::after {
+        transform: rotate(-90deg);                                          /* This property applies a 90-degree counterclockwise rotation to the ::after pseudo-element when the dropdown is expanded (i.e., when aria-expanded is true). */
+    }
+    .navheading{
+         padding: 5px;
+         transform: translateY(5px);
+    }
+    .navbarHeading{
+        background-color: #EE1C25;
+    }
+    .navheading{
+        color: white;
+    }
+    @media screen and (max-width: 990px){
+        .navheading{
+            color: black;
+        }
+        .navbarHeading{
+            background-color: rgb(243, 240, 240);
+        }
+    }
+    @media screen and (min-width: 991px){
+    .navOffcanvas{
+        display: none;
+    }
+}
+/*  ------------------------------Drop Down Animation-------------------- */
+.navDropdown {
+    opacity: 0;
+    transition: 0.2s linear all;
+}
+
+.servicesdropDown:hover .navDropdown {
+    opacity: 1;
+    color: #EE1C25;
+    transform: translateX(5px);
+    background: none;
+}
+
+.navDropdown2 {
+    transition: 0.2s linear all;
+    display: inline-block; /* Ensure it's a block-level element for transform */
+}
+
+.servicesdropDown:hover .navDropdown2 {
+    color: #EE1C25;
+    transform: translateX(5px);
+    background: none;
+}

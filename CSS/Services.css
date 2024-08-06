@@ -1,0 +1,67 @@
+*{
+    transition: .5s;
+  }
+  .servicesArrowIcon{
+    translate: 0px 3px;
+  }
+  .servicesPageContainer{
+    padding: 30px 0;
+  }
+  .servicesCustomCard{
+      overflow: hidden;
+      cursor: pointer;
+  }
+  .servicesCustomCard:hover .servicesCustomImg{
+      transform: scale(1.1);
+  }
+  .servicesCustomCard:hover .servicesCustomicon{
+      transform:rotateY(180deg);
+  }
+  .servicesCustomarrowBtn{
+       text-decoration: none;
+       color: black; 
+       position: relative;
+  }
+  .servicesCustomarrowBtn:after{
+      content: "";
+      position: absolute;
+      background-color: black;
+      height: 3px;
+      width: 0;
+      left: 0;
+      transition: 0.3s;
+      bottom: -3px;
+      
+  }
+  .servicesCustomarrowBtn:hover:after{
+      width: 100%;
+  }
+  @media screen and (max-width: 572px) {
+    .servicesCustomRow {
+        padding: 0 15px;
+    } 
+   
+}
+
+@media screen and (max-width: 768px) {
+  .servicesCustomCol {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    .servicesCustomCol{
+      padding-left: 25px;
+    }
+}
+@media screen and ((min-width: 769px) and (max-width: 990px)) {
+  #servicesSeccol {
+    padding-left: 70px;
+} 
+
+  
+}
+
+
+        
+
+

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.footer{
+    background-image: url(../Assets/1_footerimg.webp);
+    padding-top: 80px;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 7px rgb(68, 67, 68);
+    background-size: 100%;
+    background-color: rgb(30, 29, 29);
+}
+
+.footerCustomCard{
+    box-shadow: 3px 3px 7px rgb(57, 55, 55);   
+}
+.footer2{
+    background-color: rgb(14, 14, 23);
+}
+.footerContent{
+    background: rgba(10, 10, 10, 0.612);
+    padding: 40px 0;
+}
+.fIcons{
+    border-radius: 1px;
+    padding: 8px;
+    background-color: rgba(63, 61, 61, 0.174);
+    backdrop-filter: blur(10px);
+}
+.footerUpper{
+    background: linear-gradient(90deg, rgba(207,31,49,1) 26%, rgba(249,10,15,1) 49%, rgba(250,4,4,1) 86%);
+    transform: translateY(-140px);
+}
+@media screen and (max-width: 476px) {
+.footerUpperContainer{
+    display: none;
+}
+}
+@media screen and (max-width: 992px) {
+    footer{
+        background: none;
+    }
+}

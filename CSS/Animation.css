@@ -1,0 +1,39 @@
+
+.ainmationImage {
+    width: 100px;
+    height: 100px;
+}
+.animationContainer {
+    background: rgb(243, 240, 240);
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.animationContainer .animationp {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.animationRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideBand 20s linear infinite;
+}
+@keyframes slideBand {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);       /* Go to overflow side */
+    }
+}
+@media screen and (max-width: 516px) {
+    .animationContainer .animationp {
+        font-size: 1rem;
+    }
+    .ainmationImage {
+        width: 70px;
+        height: 70px;
+    }
+}

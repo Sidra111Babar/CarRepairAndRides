@@ -1,0 +1,141 @@
+* {
+    transition: 0.3s;
+}
+
+.questionsRightIcon.collapsed {
+    transform: rotate(90deg); /* Rotate icon */
+}
+
+.colorChangeJs.collapsed {
+    color: rgb(241, 241, 248); /* Change text color */
+}
+
+.quessec4iconpdisplay i.collapsed {
+    color: rgb(249, 240, 240); /* Change icon color */
+}
+
+.quessec4iconpdisplay {
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: rgb(243, 240, 240);
+    font-weight: 600;
+}
+
+.quessec4iconpdisplay i {
+    color: red;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.quessec4iconpdisplay.red-bg {
+    background-color: #EE1C25; /* Background color change */
+}
+
+.questionsCogIcon {
+    font-size: 2rem;
+}
+
+.upperImgContent {
+    background-color:rgb(243, 240, 240);
+    border: 1px solid red;
+    width: 120px;
+    height: 80px;
+}
+
+.questionsImgWrapper {
+    width: 300px;
+    height: auto;
+    z-index: 1;
+}
+
+.sec4img {
+    width: 400px;
+    height: 300px;
+}
+
+.imgCol {
+    position: relative;
+}
+
+.upperImgContent {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    z-index: 2;
+    animation: upDown 2s ease-in-out infinite;
+}
+
+.textAlign {
+    text-align: justify;
+}
+
+.dec {
+    width: 150px;
+    height: 150px;
+    background-color: #EE1C25;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 55%;
+    left: 7%;
+    z-index: 0;
+}
+/* Remove bootstrap builtin space */
+.fw-bold{
+    margin: 0;
+    padding: 0;
+} 
+.questionsPara{
+ font-size: 8px;
+ margin: 0;
+ padding: 0;
+}
+@media screen and ((min-width: 400px) and (max-width: 450px)){
+      .dec{
+        left: 10%;
+      }
+}
+@media screen and ((min-width: 450px) and (max-width: 490px)){
+    .dec{
+      left: 15%;
+    }
+}
+@media screen and ((min-width: 491px) and (max-width: 550px)){
+    .dec{
+      left: 18%;
+    }
+}
+@media screen and ((min-width: 551px) and (max-width: 767px)){
+    .dec{
+      left: 20%;
+    }
+}
+@media screen and ((min-width: 768px) and (max-width: 991px)){
+    .dec{
+      left: 0%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .dec{
+      left: 14%;
+    }
+}
+@keyframes upDown {
+ 0%, 100% {
+     transform: translateY(0); /* Start and end at the original position */
+ }
+ 50% {
+     transform: translateY(-10px); /* Move up by 10px at the halfway point */
+ }
+}
+.quessec4iconpdisplay{
+    cursor: pointer;
+}
+/* ------------------------------------------Setting of fixed height protect image to move when collapse content will appear on click */
+.imgCol {
+  
+    height: 400px; 
+  
+}
