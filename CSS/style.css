@@ -9,13 +9,13 @@ body {
 
 /* Change of image on scroll */
 .home{
-    background-image: url(../Assets/7_homebg.jpeg);
+    background-image: url(Assets/7_homebg.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment:fixed ;
 }
 .homebg2{
-    background-image: url(../Assets/2_homebg.jpg);
+    background-image: url(Assets/2_homebg.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment:fixed ;
