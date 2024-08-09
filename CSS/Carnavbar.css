@@ -23,7 +23,7 @@
   }
     
     .customNavbar{
-          background-image:url("../Assets/1_navCarimg.webp"); 
+          background-image:url("Assets/1_navCarimg.webp"); 
           background-repeat: no-repeat;
           background-size: 100%;
           object-fit: cover;  
